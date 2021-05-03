@@ -1,0 +1,4 @@
+Select country.name, city.name, countrylanguage.percentage
+from  country, city, countrylanguage
+where country.capital=cityid and countrylanguage.countrycode=country.code
+and countrylanguage.language ='English' countrylanguage.Isofficial='T' and countrylanguage.percentage > 50;
