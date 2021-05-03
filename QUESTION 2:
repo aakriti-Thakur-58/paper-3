@@ -1,0 +1,7 @@
+library("ggplot2")
+ggplot(C_data, aes(x=countries, y=doses per million)) + 
+geom_bar(stat="identity", width=0.1 + aes( fill =doses per million))
+ groupName=doses +
+ labs(title = "COVID-19 Vaccine doses administered, April 20, 2021", x= "Countries", y= "doses.per.million") +
+  theme(axis.text.x = element_text (hjust = 1 , vjust = 0.5)+
+          coord_filp()
